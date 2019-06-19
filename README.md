@@ -1,3 +1,3 @@
 # Kolodko Vadim
 
-A small project on the android. Used by the api TheMobie Database (https://www.themoviedb.org/documentation/api).
+A small project on the android. Used by the api TheMovie Database (https://www.themoviedb.org/documentation/api).

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B2B2B"
+    tools:context=".FilmDetails">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/TableImage"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"/>
+                    <TextView
+                        android:id="@+id/NameFilm"
+                        android:layout_width="235dp"
+                        android:layout_height="200dp"
+                        android:paddingLeft="15dp"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp"
+                        android:width="0dip"/>
+                </TableRow>
+                <TextView
+                    android:id="@+id/DetailsFilm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:width="0dip"/>
+            </TableLayout>
+    </ScrollView>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/MenuButt"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/mencin"
+            android:onClick="ClickMenuButtDet"/>
+
+        <Button
+            android:id="@+id/SearchButt"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:background="@drawable/sercin"
+            android:onClick="ClickSerButtDet"/>
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/MyMenu"
+        android:columnCount="1"
+        android:layout_marginTop="60dp"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:text="Main"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:onClick="ClickMainButtDet"/>
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:text="Exit"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:onClick="ClickExitButtDet"/>
+
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/MySearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="70dp"
+        android:columnCount="1"
+        android:background="@color/colorPrimary"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Search"
+            android:textColor="#ffffff"
+            android:textSize="35dp"
+            android:layout_margin="15dp"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff"
+            android:hint="Enter text"
+            android:padding="10dp"
+            android:textSize="60px"
+            android:textStyle="italic"
+            android:layout_margin="15dp"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Enter"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:layout_margin="15dp"/>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/testtest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"/>
+
+</android.support.constraint.ConstraintLayout>

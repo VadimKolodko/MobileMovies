@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/test"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TextLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login in"
+            android:textSize="100px"
+            android:textColor="#ffffff"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/Login"
+            android:hint="Username"
+            android:textSize="60px"
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:textStyle="italic"
+            android:layout_margin="15dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/Password"
+            android:hint="Password"
+            android:textSize="60px"
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:textStyle="italic"
+            android:layout_margin="15dp"
+            android:inputType="textPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/EnterButton"
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Enter"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:onClick="EnterButt"/>
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/GridConn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No connection"
+            android:textSize="40dp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No connection"
+            android:textSize="40dp"
+            android:textColor="#ffffff"/>
+
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>

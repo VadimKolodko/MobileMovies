@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B2B2B"
+    tools:context=".WindowMain">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <GridLayout
+            android:id="@+id/TopFilm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="1">
+
+        </GridLayout>
+    </ScrollView>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/MenuButt"
+            android:onClick="ClickMenuButt"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/mencin"/>
+
+        <Button
+            android:id="@+id/SearchButt"
+            android:onClick="ClickSearchButt"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:background="@drawable/sercin"/>
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/MyMenu"
+        android:columnCount="1"
+        android:layout_marginTop="60dp"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:text="Main"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:onClick="ClickMainButt"/>
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:text="Exit"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:onClick="ClickExitButt"/>
+
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/MySearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="70dp"
+        android:columnCount="1"
+        android:background="@color/colorPrimary"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Search"
+            android:textColor="#ffffff"
+            android:textSize="35dp"
+            android:layout_margin="15dp"/>
+
+        <EditText
+            android:id="@+id/EnterNameFilm"
+            android:layout_width="250dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff"
+            android:hint="Enter text"
+            android:padding="10dp"
+            android:textSize="60px"
+            android:textStyle="italic"
+            android:layout_margin="15dp"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:text="Enter"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:onClick="GoSearch"/>
+
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>
